@@ -1,0 +1,82 @@
+<!--Crystal Game-->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+    <link rel="Stylesheet" href="assets/css/style.css" type="text/css">
+  </head> 
+
+  <body>
+    <br>
+    
+    <div class="container" style="background-color:rgb(220, 240, 245);width:450px;" >
+        <br>
+        <h1 class="text-center"> <strong>Maths Trivia Game</strong> </h1>
+
+        <h5 class="text-center"> <br> Click Start button to play the Game. </h5>
+
+        <div style="text-align: center;" id="show-number"></div>
+        
+        <div class="container" style="text-align: center;">
+          <button type="button" id="start" class="btn btn-primary" style="width:200px;">Start</button>
+        </div>
+        <br>
+        <div class="container" style="text-align: center;">
+            <strong> <div id="yourscore"></div> </strong>
+        </div>
+            
+             <div id="wrapper" style="display:none;">
+
+                <strong> <p class="question">1. What is the Sum of (1, 2, 3, 4, 7, 9, 8) ?</p>  </strong>        
+
+                <ul class="answers">            
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">32</label><br/>          
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">33</label><br/>            
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">34</label><br/>            
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">37</label><br/>       
+                </ul>        
+                
+                
+               <strong> <p class="question">2. What is the Product of 27 and 37?</p> </strong>       
+                
+                <ul class="answers">            
+                <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">969</label><br/>           
+                <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">979</label><br/>            
+                <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">989</label><br/>           
+                <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">999</label><br/>       
+                </ul>        
+                
+              <strong>  <p class="question">3. What is the Difference between 3491 and 1239?</p>      </strong>    
+                
+                <ul class="answers">            
+                <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">2332</label><br/>            
+                <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">2252</label><br/>            
+                <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">2432</label><br/>           
+                <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">2342</label><br/>       
+                </ul>       
+                
+                <div class="container" style="text-align: center;">
+                    <button type="button" id="done" class="btn btn-primary" style="width:200px;">Done</button>
+                  </div>
+              
+              <br>
+              <br>
+            </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="assets\javascript\trivia.js">
+    </script>
+   
+   
+
+  </body>
+
+</html>
