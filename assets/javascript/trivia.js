@@ -23,7 +23,7 @@
 
       alert("Time Up!");
       check();
-      $("#yourscore").html("Your Score out of 3 is: <h2>" + score + "</h2>");
+      $("#yourscore").html("Your Score out of 3 is: <h2>" + score + "</h2> <br>");
       document.getElementById('wrapper').style.display = "none";
 
       }
@@ -68,6 +68,8 @@
 
     $("#start").on("click", function() 
                               { 
+                                document.getElementById('startc').style.display = "none";  
+                                document.getElementById('text').style.display = "none"; 
                                 uncheck();
                                 stop();
                                 document.getElementById('show-number').style.display = "block";
@@ -79,12 +81,15 @@
     
     $("#done").on("click", function() 
                               { 
+                                document.getElementById('startc').style.display = "block";  
+                                document.getElementById('text').style.display = "block";  
                                 document.getElementById('wrapper').style.display = "none";
                                 //document.getElementById('start').style.display = "none";
                                 document.getElementById('show-number').style.display = "none";
                                 stop();
                                 check();
-                                $("#yourscore").html("Your Score out of 3 is: <h2>" + score + "</h2>");
+
+                                $("#yourscore").html("Your Score out of 3 is: <h2>" + score + "</h2><br>");
                           
                                });
 
