@@ -22,6 +22,8 @@
        stop();
 
       alert("Time Up!");
+      document.getElementById('startc').style.display = "block";  
+      document.getElementById('text').style.display = "block";
       check();
       $("#yourscore").html("Your Score out of 3 is: <h2>" + score + "</h2> <br>");
       document.getElementById('wrapper').style.display = "none";
